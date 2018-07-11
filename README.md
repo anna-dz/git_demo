@@ -49,7 +49,7 @@ to sync your local repository with the version stored on Github, which is a good
 `git branch` list branches  
 `git checkout <branch name>` switch to a different branch.  
 `git checkout -b <branch name>` create and switch to a new branch.  
-'git merge <from> <to>' merge branches.  
+`git merge <from> <to>` merge branches.  
 
 ### Working with Github
 `git clone <repository>` initial download of a repository from Github. Done only once per project.  
