@@ -39,16 +39,21 @@ to sync your local repository with the version stored on Github, which is a good
 `git commit` commit everything in the staging area. This will open a text editor allowing to insert a commit message. After writing your message, follow the keyboard shortcuts to exit the text editor and save the message.  
 
 ### Undoing changes
-`git checkout -- <filename or directory>` discard changes to file(s) that are yet unstaged. This can't be undone.
-`git reset HEAD <filename or directory>` for staged files, restore the file to the state when it was last staged. This can't be undone.  
-`git checkout <commit hash> <filename or directory>` restore a file(s) to a previous commit. This can be saved as another commit, so can be undone.
+`git checkout -- <filename or directory>` discard changes to file(s) that are yet unstaged.  
+`git reset HEAD <filename or directory>` unstage staged files (undo `git add`). Then use `git checkout` to discard uncommitted changes.  
+`git checkout <commit hash> <optional: filename or directory>` restore to a previous commit, and preserve the commit history. This can be saved as another commit, and undone.  
+`git checkout -b <branch name> <commit hash>` restore the  previous commit as a new branch.  
+`git reset --hard <commit hash>` restore to a previous commit, and delete any subsequent commit history - this cannot be undone.  
 
-
-
+### Branches
+`git branch` list branches  
+`git checkout <branch name>` switch to a different branch.  
+`git checkout -b <branch name>` create and switch to a new branch.  
+'git merge <from> <to>' merge branches.  
 
 ### Working with Github
-`git clone <repository>` initial download of a repository from Github. Done only once per project.
-`git pull` download new commits from Github, to update your local files with changed made by others.
+`git clone <repository>` initial download of a repository from Github. Done only once per project.  
+`git pull` download new commits from Github, to update your local files with changes made by others.  
 `git push` upload your commits to Github.
 
 ## Glossary
