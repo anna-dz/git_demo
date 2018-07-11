@@ -31,7 +31,7 @@ to sync your local repository with the version stored on Github, which is a good
 
 ### Checking the state of your repository  
 `git status`  see what's going on in your repository, e.g. which files have been modified since the last commit.  
-`git diff`, `git diff <filename>`, `git diff <first commit hash>..<second commit hash>` show changes made to files.
+`git diff`, `git diff <filename>`, `git diff <first commit hash>..<second commit hash>` show changes made to files.  
 `git log` see commit history for the repository (`git log <path>` to see history for a specific file). Shows commit hashes. Press space bar to go to next page, or q to quit.  
 
 ### Commiting changes  
@@ -59,9 +59,9 @@ to sync your local repository with the version stored on Github, which is a good
 ## Glossary
 repository - the codebase for your project.  
 HEAD - the most recent commit  
-HEAD~1, HEAD~2, HEAD~3 - previous commit, 2nd last, 3rd last commit etc.  
+HEAD\~1, HEAD\~2, HEAD\~3 - previous commit, 2nd last, 3rd last commit etc.  
 
 
 ## Structure of a git repository
-`.git` hidden directory where git stores it's files.
-`.gitignore` a text document containing a list of files (can include wildcard patterns) which should not be tracked.
+`.git` hidden directory where git stores it's files.  
+`.gitignore` a text document containing a list of files (can include wildcard patterns) which should not be tracked.  
